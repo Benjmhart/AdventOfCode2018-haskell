@@ -6,7 +6,6 @@ main :: IO()
 main =  do
   intStr <- readFile $ "./inputs/day1-2.txt"
   let ints = map toInt . words $ intStr
-  putStr "Beginning thing"
   putStr . show . solve $ ints
   return ()
   where toInt x = read x :: Integer
