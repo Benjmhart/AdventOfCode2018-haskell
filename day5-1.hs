@@ -32,6 +32,6 @@ deletePairs :: String -> String
 deletePairs []  = []
 deletePairs [x] = [x]
 deletePairs (c:x:xs)
-  | x == target = xs 
+  | x == target = deletePairs xs 
   | otherwise   = c:(deletePairs (x:xs))
   where target = if isLower c then toUpper c else toLower c
