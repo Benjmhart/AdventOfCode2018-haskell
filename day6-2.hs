@@ -15,7 +15,7 @@ solve :: String -> Int
 solve xs = length [ (x,y) 
                | x <- [maxL..maxR] 
                , y <- [maxT..maxB ]
-               ,   (< maxDist) . sum . map (getMHDistance (x,y)) $ origins 
+               , (< maxDist) . sum . map (getMHDistance (x,y)) $ origins 
                ]
   where origins = parse xs
         maxL = minimum . map fst $ origins
@@ -27,9 +27,8 @@ parse :: String -> [Coord]
 parse xs = origins
  where
   origins = map pipeline . lines $ xs
-  pipeline = toPair . map toInt . words . isNotPunctuation 
+  pipeline = toPair . map read . words . isNotPunctuation 
   isNotPunctuation = filter (not . isPunctuation)
-  toInt x = read x :: Int
   toPair (a:b:[]) = (a, b)
 
 getMHDistance :: Coord -> Coord -> Int
