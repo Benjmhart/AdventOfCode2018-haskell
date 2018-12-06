@@ -1,9 +1,4 @@
-import Data.List
 import Data.Char
-import qualified Data.Set as S
-import qualified Data.Map as M
-import Data.Monoid(Sum(..), getSum)
-import Control.Applicative
 
 main :: IO()
 main = do
@@ -27,7 +22,6 @@ solve xs = length [ (x,y)
         maxT = minimum . map snd $ origins
         maxR = maximum . map fst $ origins
         maxB = maximum . map snd $ origins
-        
 
 parse :: String -> [Coord]
 parse xs = origins
@@ -37,8 +31,6 @@ parse xs = origins
   isNotPunctuation = filter (not . isPunctuation)
   toInt x = read x :: Int
   toPair (a:b:[]) = (a, b)
-
-        
 
 getMHDistance :: Coord -> Coord -> Int
 getMHDistance (x1, y1)  (x2, y2) = distance
