@@ -34,7 +34,7 @@ solveBoard ((l,r,t,b), coords, board) = (edgeChars, solvedBoard)
 
 parse :: String -> (Dims, [SignedCoord], UnsolvedBoard)
 parse xs = (dims, zipped, board)
-  where zipped = zip ['a'..'z'] piped
+  where zipped = zip ['a'..] piped
         piped = map pipeline . lines $ xs
         pipeline = toPair . map toInt . words . isNotPunctuation 
         isNotPunctuation = filter (not . isPunctuation)
