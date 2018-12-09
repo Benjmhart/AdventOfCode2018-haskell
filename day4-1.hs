@@ -20,25 +20,6 @@ sortIOList = do
   writeFile "./inputs/day4-1sorted.txt" output
   return ()
 
-
-
-testList = [ "[1518-11-01 00:00] Guard #10 begins shift"
-           , "[1518-11-01 00:05] falls asleep"
-           , "[1518-11-01 00:25] wakes up" 
-           , "[1518-11-01 00:30] falls asleep"
-           , "[1518-11-01 00:55] wakes up" 
-           , "[1518-11-01 23:58] Guard #99 begins shift"
-           , "[1518-11-02 00:40] falls asleep"
-           , "[1518-11-02 00:50] wakes up"
-           , "[1518-11-03 00:05] Guard #10 begins shift"
-           , "[1518-11-03 00:24] falls asleep"
-           , "[1518-11-03 00:29] wakes up"
-           , "[1518-11-04 00:02] Guard #99 begins shift"
-           , "[1518-11-04 00:36] falls asleep"
-           , "[1518-11-04 00:46] wakes up"
-           , "[1518-11-05 00:03] Guard #99 begins shift"
-           , "[1518-11-05 00:45] falls asleep"
-           , "[1518-11-05 00:55] wakes up" ]
 -- takes raw input, accumulator of dateString to ID returns (list of Id's, map of ID to relevant )
 type DateTimeWithId = ((Integer, Integer, Integer), Integer)
 
@@ -72,7 +53,7 @@ collectInfo (xs:xss) mapInfoById date@((_,_,minute),id'')
   | (isAsleep && advance)       = collectInfo xss nextMapWithSleep (recordDate, id)
   | isAsleep                    = collectInfo (xs:xss) nextMapWithSleep nextDate
   where firstTime               = isNothing $ lookupResult
-        rDate@(recordDate, id')  = fromArbitraryString xs
+        rDate@(recordDate, id') = fromArbitraryString xs
         id                      = if id' == 0 then id'' else id'
         lookupResult            = M.lookup id mapInfoById
         firstTimeMap            = M.insert id (nextAction, []) mapInfoById
@@ -85,8 +66,6 @@ collectInfo (xs:xss) mapInfoById date@((_,_,minute),id'')
         advance                 = recordDate == (fst date) || "begins" `isInfixOf` currentAction
         lastAction              = if isJust lookupResult then fst . fromJust $ lookupResult else ""
         sleepTimes              = if isJust lookupResult then snd . fromJust $ lookupResult else []
-        traceShowSleeping x = trace ("Sleeping "++ show x ++ " " ++ show date) x
-        traceShowAdvance x  = trace ("Advance "++ show x ++ " " ++ show date) x
 
 safeHead :: [a] -> Maybe a
 safeHead []     = Nothing

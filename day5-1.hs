@@ -10,14 +10,6 @@ main = do
   putStr $ (++ "\n"). show . solve $ input
   return ()
 
-testStr1 = "aA" -- 0
-testStr2 = "abBA" -- 0
-testStr3 = reverse "aA" -- 0
-testStr4 = reverse "abBA" -- 0
-testStr5 = "abAB" --4
-testStr6 = "aabAAB"--6
-testStr7 = "dabAcCaCBAcCcaDA"
-
 solve:: String -> Int
 solve xs = length $ deleted 
   where deleted = operateUntilDone xs
