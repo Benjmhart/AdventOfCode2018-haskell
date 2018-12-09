@@ -1,19 +1,15 @@
 import Data.List
 import Data.Char
 import Control.Applicative((<$>), (<*>))
+import Control.Monad
 import Data.Maybe
-import Data.IntMap.Strict (IntMap)
-import qualified Data.IntMap.Strict as IntMap
-import Debug.Trace
-
-t' x = traceShow x x
-
-t'' str x = trace (str ++ " " ++ (show x)) x
-
-t''' str s@(_, _, _, _, xs) = trace (str ++ " " ++ (show xs)) s
+import Data.IntMap (IntMap)
+import qualified Data.IntMap as M
+import qualified Data.List.PointedList.Circular as C
+import Data.List.PointedList.Circular (PointedList)
 
 type Game  = (Int, Int) -- players, last marble, highscore
-type State = (Int, Int, Int, [Int], [(Int, Int)])  -- cPlayer, cMarble, nMarble [marbles]. [scores] 
+type State = (Int, Int, Int, PointedList Int, (IntMap Int))  -- cPlayer, cMarble, nMarble [marbles]. [scores] 
 
 main :: IO()
 main = do
@@ -21,18 +17,14 @@ main = do
   putStr $ (++ "\n"). show . solve $ input
   return ()
 
-
-
-solve :: String -> Int 
-solve = last .  getScores . trace "finished game" . playGame' . makeGame
+solve :: String -> Int
+solve = maximum .  getScores . playGame' . makeGame
   
 getScores :: State -> [Int]
-getScores (_,_,_,_, scores) = sort . map snd . IntMap.toList $ scoreSums
-  where scoreSums = foldl insertFunc IntMap.empty scores 
-        insertFunc acc (p, s) = trace ("running" ++ (show s)) $ IntMap.insertWith (+) p s acc
+getScores (_,_,_,_, scores) =  map snd . M.toList $ scores
 
 playGame' :: Game -> State
-playGame' game = playGame game ((-1), 0, 1, [0], [])
+playGame' game@(p, lmv) = playGame (p, lmv) ((-1), 0, 1, C.singleton 0, M.empty)
 
 playGame :: Game -> State -> State
 playGame 
@@ -44,14 +36,11 @@ playGame
       gameEnd   = (next) > lastMarbleValue
       nextState = turn players state
 
-safetyHead [] = (0,0)
-safetyHead xs = head xs
-
 -- scores will be a list of playerId and individual score
 -- player ID will be 1-based, and resets to 1
 turn :: Int -> State -> State
-turn _ ((-1), 0, 1, [0], scores)
-  = ( 1, 1, 2, [0, 1], scores)
+turn _ ((-1), 0, 1, circle, scores)
+  = ( 1, 1, 2, (C.insert 1 circle), scores)
 turn players state@(currentPlayer, currentMarble, nextMarble, marbleCircle, scores)
   | hasScore  = stateWithScore
   | otherwise = (nextPlayer, nextCurrentMarble, nextNMarb, nextCircle, scores )
@@ -59,28 +48,20 @@ turn players state@(currentPlayer, currentMarble, nextMarble, marbleCircle, scor
         nextPlayer         = getNextPlayer players currentPlayer 
         nextCurrentMarble  = nextMarble
         nextNMarb          = nextMarble + 1 
-        nextCircle         = insertAt insertIndex nextMarble marbleCircle
+        nextCircle         = C.insert nextMarble . C.next $ marbleCircle
         stateWithScore     = getScoreState players state
-        insertIndex        = cycleIndex currentMarbleIndex 2 (length marbleCircle) 
-        currentMarbleIndex = fromJust $ maybecmi
-        maybecmi           = currentMarble `elemIndex` marbleCircle
 
 --getNextPlayer = top level function used by both
 
 getScoreState :: Int -> State -> State
 getScoreState players (currentPlayer, currentMarble, nextMarble, marbleCircle, scores)
-  = (nextPlayer, nextCurrentMarble, nextNMarb, nextCircle, nextScores)
+  = (nextPlayer, nextCurrentMarble, nextNMarb, circ, nextScores)
     where
-      currentMarbleIndex = fromJust $ currentMarble `elemIndex` marbleCircle
-      removalIndex       = cycleIndex currentMarbleIndex (-7) cl
-      removedMarble      = marbleCircle !! removalIndex
-      nextCircle         = delete removedMarble marbleCircle
-      nextCurrentIndex   = removalIndex -- cycleIndex removalIndex (-1) cl
-      nextCurrentMarble  = nextCircle !! nextCurrentIndex
+      (removed, Just circ ) = liftM2 (,) C._focus C.delete (C.moveN (-7) marbleCircle)
       nextPlayer         = getNextPlayer players currentPlayer 
-      cl                 = length marbleCircle
-      scoreAmt           = (currentPlayer, nextMarble + removedMarble)
-      nextScores         = scoreAmt:scores 
+      scoreAmt           = nextMarble + removed
+      nextCurrentMarble  = C._focus circ
+      nextScores = M.insertWith (+) currentPlayer scoreAmt scores 
       nextNMarb          = nextMarble + 1
 
 getNextPlayer :: Int -> Int -> Int
