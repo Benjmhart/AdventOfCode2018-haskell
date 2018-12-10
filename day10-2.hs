@@ -14,18 +14,18 @@ data Point = Point { coords   :: (Int, Int)
                    , velocity :: (Int, Int)
                    }deriving (Eq, Ord, Show)
 
-solve = unlines . buildGridView . evolveList' . parse
+solve = show . evolveList' . parse
 
 -- when the height for a given iteration is within a single line of text, stop
 
-evolveList' :: [Point] -> [Point]
-evolveList'  points = evolveList (getDims points) points
+evolveList' :: [Point] -> Int
+evolveList'  points = evolveList (getDims points) points 0
 
 
-evolveList :: Dims -> [Point] -> [Point]
-evolveList dims points
-  | h <= 10  = points
-  | otherwise = evolveList nextDims nexts
+evolveList :: Dims -> [Point] -> Int -> Int
+evolveList dims points counter
+  | h <= 10  = counter
+  | otherwise = evolveList nextDims nexts (counter + 1)
   where (h, w)   = getHW dims
         nextDims = getDims nexts
         nexts    = iterateList points
@@ -41,27 +41,6 @@ parse = map pipeline . lines
 iterateList :: [Point] -> [Point]
 iterateList [] = []
 iterateList ((Point (x,y) vs@(xv, yv)):xs) = (Point (x+xv, y+yv) vs): iterateList xs
-
-buildGridView :: [Point] -> [String]
-buildGridView points = transpose view
-  where 
-    dims@(l,r, t,b)  = getDims points
-    (h, w)           = getHW dims
-    view             = breakEvery h . map assignChar $ coordList 
-    pointCoords      = map extractCoordPair $ points
-    coordList        = [ (x,y) 
-                       | x <- [l..r]
-                       , y <- [t..b]
-                       ]
-    assignChar co
-      | co `elem` pointCoords = '#'
-      | otherwise             = '.'
-
-breakEvery :: Int -> [a] -> [[a]]
-breakEvery _ [] = []
-breakEvery n xs
-  | length xs <= n = [xs]
-  | otherwise     = (take (n+1) xs):breakEvery n (drop (n+1) xs) 
     
 getDims :: [Point] -> Dims
 getDims points = (leftEdge, rightEdge, topEdge, bottomEdge)
@@ -76,9 +55,6 @@ getDims points = (leftEdge, rightEdge, topEdge, bottomEdge)
 
 getHW :: Dims -> (Int,Int)
 getHW (l, r, t, b) = (b - t, r - l)
-
-extractCoordPair :: Point -> (Int,Int)
-extractCoordPair (Point p _) = p  
 
 extractXCoord :: Point -> Int
 extractXCoord (Point (x, _) _) = x
