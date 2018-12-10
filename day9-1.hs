@@ -36,8 +36,7 @@ playGame
       gameEnd   = (next) > lastMarbleValue
       nextState = turn players state
 
--- scores will be a list of playerId and individual score
--- player ID will be 1-based, and resets to 1
+
 turn :: Int -> State -> State
 turn _ ((-1), 0, 1, circle, scores)
   = ( 1, 1, 2, (C.insert 1 circle), scores)
@@ -50,8 +49,6 @@ turn players state@(currentPlayer, currentMarble, nextMarble, marbleCircle, scor
         nextNMarb          = nextMarble + 1 
         nextCircle         = C.insert nextMarble . C.next $ marbleCircle
         stateWithScore     = getScoreState players state
-
---getNextPlayer = top level function used by both
 
 getScoreState :: Int -> State -> State
 getScoreState players (currentPlayer, currentMarble, nextMarble, marbleCircle, scores)
@@ -68,18 +65,6 @@ getNextPlayer :: Int -> Int -> Int
 getNextPlayer players currentPlayer 
   = if posNextPlayer == 0 then players else posNextPlayer  
     where posNextPlayer = (currentPlayer + 1) `mod` players
-
-cycleIndex :: Int -> Int -> Int -> Int
-cycleIndex start n circleSize
-  | modResult == 0 = circleSize
-  | modResult <  0 = abs modResult
-  | otherwise      = modResult
-  where modResult  = (start + n) `mod` circleSize
-        
-
-insertAt :: Int -> a -> [a] -> [a]
-insertAt n e xs = ys ++ [e] ++ zs
-  where (ys, zs) = splitAt n xs
 
 makeGame :: String -> Game
 makeGame = toPair . map read . words . filter ((||) <$> isDigit <*> isSpace)

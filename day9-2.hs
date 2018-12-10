@@ -1,3 +1,4 @@
+
 import Data.List
 import Data.Char
 import Control.Applicative((<$>), (<*>))
@@ -20,17 +21,17 @@ main = do
 solve :: String -> Int
 solve = maximum .  getScores . playGame' . makeGame
   
-getScores :: State -> [Int]
-getScores (_,_,_,_, scores) =  map snd . M.toList $ scores
+getScores ::  IntMap Int -> [Int]
+getScores  scores =  map snd . M.toList $ scores
 
-playGame' :: Game -> State
+playGame' :: Game ->  IntMap Int
 playGame' game@(p, lmv) = playGame (p, lmv*100) ((-1), 0, 1, C.singleton 0, M.empty)
 
-playGame :: Game -> State -> State
+playGame :: Game -> State -> IntMap Int
 playGame 
   game@(players, lastMarbleValue) 
   state@(_, _, next, _, scores)
-    | gameEnd   = state
+    | gameEnd   = scores
     | otherwise = playGame game nextState
     where 
       gameEnd   = (next) > lastMarbleValue
