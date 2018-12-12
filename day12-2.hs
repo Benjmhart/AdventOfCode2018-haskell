@@ -1,12 +1,4 @@
 import Data.List
-import Data.Char
-import Control.Applicative((<$>), (<*>))
-import Control.Arrow ((&&&), (***))
-import Debug.Trace
-
-t' x = trace ("\n" ++ x ++ "\n") x
-
-t'' str x = trace (str ++ (show . length $ x)) x
 
 
 --- just watch output for diff to start repeating,  then apply this formula :

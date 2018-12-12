@@ -1,13 +1,4 @@
 import Data.List
-import Data.Char
-import Control.Applicative((<$>), (<*>))
-import Control.Arrow ((&&&), (***))
-import Debug.Trace
-
-t' x = trace x x
-
-t'' str x = trace (str ++ (show . length $ x)) x
-
 
 main :: IO()
 main = do
