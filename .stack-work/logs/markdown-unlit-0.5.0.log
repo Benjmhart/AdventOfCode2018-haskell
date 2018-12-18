@@ -1,0 +1,13 @@
+Configuring markdown-unlit-0.5.0...
+Preprocessing library for markdown-unlit-0.5.0..
+Building library for markdown-unlit-0.5.0..
+[1 of 2] Compiling Paths_markdown_unlit ( .stack-work/dist/x86_64-linux/Cabal-2.2.0.1/build/autogen/Paths_markdown_unlit.hs, .stack-work/dist/x86_64-linux/Cabal-2.2.0.1/build/Paths_markdown_unlit.o )
+[2 of 2] Compiling Text.Markdown.Unlit ( src/Text/Markdown/Unlit.hs, .stack-work/dist/x86_64-linux/Cabal-2.2.0.1/build/Text/Markdown/Unlit.o )
+Preprocessing executable 'markdown-unlit' for markdown-unlit-0.5.0..
+Building executable 'markdown-unlit' for markdown-unlit-0.5.0..
+[1 of 2] Compiling Main             ( driver/Main.hs, .stack-work/dist/x86_64-linux/Cabal-2.2.0.1/build/markdown-unlit/markdown-unlit-tmp/Main.o )
+[2 of 2] Compiling Paths_markdown_unlit ( .stack-work/dist/x86_64-linux/Cabal-2.2.0.1/build/markdown-unlit/autogen/Paths_markdown_unlit.hs, .stack-work/dist/x86_64-linux/Cabal-2.2.0.1/build/markdown-unlit/markdown-unlit-tmp/Paths_markdown_unlit.o )
+Linking .stack-work/dist/x86_64-linux/Cabal-2.2.0.1/build/markdown-unlit/markdown-unlit ...
+Installing library in /home/bhart/projects/advent/.stack-work/install/x86_64-linux/lts-12.20/8.4.4/lib/x86_64-linux-ghc-8.4.4/markdown-unlit-0.5.0-46pKdFOTAGo9dawd6t54mN
+Installing executable markdown-unlit in /home/bhart/projects/advent/.stack-work/install/x86_64-linux/lts-12.20/8.4.4/bin
+Registering library for markdown-unlit-0.5.0..

@@ -1,0 +1,20 @@
+Configuring array-0.5.2.0...
+Preprocessing library for array-0.5.2.0..
+Building library for array-0.5.2.0..
+[ 1 of 15] Compiling Data.Array       ( Data/Array.hs, .stack-work/dist/x86_64-linux/Cabal-2.2.0.1/build/Data/Array.o )
+[ 2 of 15] Compiling Data.Array.Base  ( Data/Array/Base.hs, .stack-work/dist/x86_64-linux/Cabal-2.2.0.1/build/Data/Array/Base.o )
+[ 3 of 15] Compiling Data.Array.IArray ( Data/Array/IArray.hs, .stack-work/dist/x86_64-linux/Cabal-2.2.0.1/build/Data/Array/IArray.o )
+[ 4 of 15] Compiling Data.Array.IO.Internals ( Data/Array/IO/Internals.hs, .stack-work/dist/x86_64-linux/Cabal-2.2.0.1/build/Data/Array/IO/Internals.o )
+[ 5 of 15] Compiling Data.Array.MArray ( Data/Array/MArray.hs, .stack-work/dist/x86_64-linux/Cabal-2.2.0.1/build/Data/Array/MArray.o )
+[ 6 of 15] Compiling Data.Array.IO    ( Data/Array/IO.hs, .stack-work/dist/x86_64-linux/Cabal-2.2.0.1/build/Data/Array/IO.o )
+[ 7 of 15] Compiling Data.Array.MArray.Safe ( Data/Array/MArray/Safe.hs, .stack-work/dist/x86_64-linux/Cabal-2.2.0.1/build/Data/Array/MArray/Safe.o )
+[ 8 of 15] Compiling Data.Array.IO.Safe ( Data/Array/IO/Safe.hs, .stack-work/dist/x86_64-linux/Cabal-2.2.0.1/build/Data/Array/IO/Safe.o )
+[ 9 of 15] Compiling Data.Array.ST    ( Data/Array/ST.hs, .stack-work/dist/x86_64-linux/Cabal-2.2.0.1/build/Data/Array/ST.o )
+[10 of 15] Compiling Data.Array.ST.Safe ( Data/Array/ST/Safe.hs, .stack-work/dist/x86_64-linux/Cabal-2.2.0.1/build/Data/Array/ST/Safe.o )
+[11 of 15] Compiling Data.Array.Storable.Internals ( Data/Array/Storable/Internals.hs, .stack-work/dist/x86_64-linux/Cabal-2.2.0.1/build/Data/Array/Storable/Internals.o )
+[12 of 15] Compiling Data.Array.Storable ( Data/Array/Storable.hs, .stack-work/dist/x86_64-linux/Cabal-2.2.0.1/build/Data/Array/Storable.o )
+[13 of 15] Compiling Data.Array.Storable.Safe ( Data/Array/Storable/Safe.hs, .stack-work/dist/x86_64-linux/Cabal-2.2.0.1/build/Data/Array/Storable/Safe.o )
+[14 of 15] Compiling Data.Array.Unboxed ( Data/Array/Unboxed.hs, .stack-work/dist/x86_64-linux/Cabal-2.2.0.1/build/Data/Array/Unboxed.o )
+[15 of 15] Compiling Data.Array.Unsafe ( Data/Array/Unsafe.hs, .stack-work/dist/x86_64-linux/Cabal-2.2.0.1/build/Data/Array/Unsafe.o )
+Installing library in /home/bhart/projects/advent/.stack-work/install/x86_64-linux/lts-12.20/8.4.4/lib/x86_64-linux-ghc-8.4.4/array-0.5.2.0-1FiLBhZbipg6s3baXWC5Ht
+Registering library for array-0.5.2.0..

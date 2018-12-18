@@ -1,0 +1,28 @@
+Configuring bytestring-0.10.8.2...
+Preprocessing library for bytestring-0.10.8.2..
+Building library for bytestring-0.10.8.2..
+[ 1 of 23] Compiling Data.ByteString.Builder.Prim.Internal ( Data/ByteString/Builder/Prim/Internal.hs, .stack-work/dist/x86_64-linux/Cabal-2.2.0.1/build/Data/ByteString/Builder/Prim/Internal.o )
+[ 2 of 23] Compiling Data.ByteString.Builder.Prim.Internal.Floating ( Data/ByteString/Builder/Prim/Internal/Floating.hs, .stack-work/dist/x86_64-linux/Cabal-2.2.0.1/build/Data/ByteString/Builder/Prim/Internal/Floating.o )
+[ 3 of 23] Compiling Data.ByteString.Builder.Prim.Internal.UncheckedShifts ( Data/ByteString/Builder/Prim/Internal/UncheckedShifts.hs, .stack-work/dist/x86_64-linux/Cabal-2.2.0.1/build/Data/ByteString/Builder/Prim/Internal/UncheckedShifts.o )
+[ 4 of 23] Compiling Data.ByteString.Builder.Prim.Binary ( Data/ByteString/Builder/Prim/Binary.hs, .stack-work/dist/x86_64-linux/Cabal-2.2.0.1/build/Data/ByteString/Builder/Prim/Binary.o )
+[ 5 of 23] Compiling Data.ByteString.Internal ( Data/ByteString/Internal.hs, .stack-work/dist/x86_64-linux/Cabal-2.2.0.1/build/Data/ByteString/Internal.o )
+[ 6 of 23] Compiling Data.ByteString.Short.Internal ( Data/ByteString/Short/Internal.hs, .stack-work/dist/x86_64-linux/Cabal-2.2.0.1/build/Data/ByteString/Short/Internal.o )
+[ 7 of 23] Compiling Data.ByteString.Short ( Data/ByteString/Short.hs, .stack-work/dist/x86_64-linux/Cabal-2.2.0.1/build/Data/ByteString/Short.o )
+[ 8 of 23] Compiling Data.ByteString.Unsafe ( Data/ByteString/Unsafe.hs, .stack-work/dist/x86_64-linux/Cabal-2.2.0.1/build/Data/ByteString/Unsafe.o )
+[ 9 of 23] Compiling Data.ByteString  ( Data/ByteString.hs, .stack-work/dist/x86_64-linux/Cabal-2.2.0.1/build/Data/ByteString.o )
+[10 of 23] Compiling Data.ByteString.Lazy.Internal ( Data/ByteString/Lazy/Internal.hs, .stack-work/dist/x86_64-linux/Cabal-2.2.0.1/build/Data/ByteString/Lazy/Internal.o )
+[11 of 23] Compiling Data.ByteString.Lazy ( Data/ByteString/Lazy.hs, .stack-work/dist/x86_64-linux/Cabal-2.2.0.1/build/Data/ByteString/Lazy.o )
+[12 of 23] Compiling Data.ByteString.Lazy.Char8 ( Data/ByteString/Lazy/Char8.hs, .stack-work/dist/x86_64-linux/Cabal-2.2.0.1/build/Data/ByteString/Lazy/Char8.o )
+[13 of 23] Compiling Data.ByteString.Char8 ( Data/ByteString/Char8.hs, .stack-work/dist/x86_64-linux/Cabal-2.2.0.1/build/Data/ByteString/Char8.o )
+[14 of 23] Compiling Data.ByteString.Builder.Prim.Internal.Base16 ( Data/ByteString/Builder/Prim/Internal/Base16.hs, .stack-work/dist/x86_64-linux/Cabal-2.2.0.1/build/Data/ByteString/Builder/Prim/Internal/Base16.o )
+[15 of 23] Compiling Data.ByteString.Builder.Prim.ASCII ( Data/ByteString/Builder/Prim/ASCII.hs, .stack-work/dist/x86_64-linux/Cabal-2.2.0.1/build/Data/ByteString/Builder/Prim/ASCII.o )
+[16 of 23] Compiling Data.ByteString.Builder.Internal ( Data/ByteString/Builder/Internal.hs, .stack-work/dist/x86_64-linux/Cabal-2.2.0.1/build/Data/ByteString/Builder/Internal.o )
+[17 of 23] Compiling Data.ByteString.Builder.Prim ( Data/ByteString/Builder/Prim.hs, .stack-work/dist/x86_64-linux/Cabal-2.2.0.1/build/Data/ByteString/Builder/Prim.o )
+[18 of 23] Compiling Data.ByteString.Builder.Extra ( Data/ByteString/Builder/Extra.hs, .stack-work/dist/x86_64-linux/Cabal-2.2.0.1/build/Data/ByteString/Builder/Extra.o )
+[19 of 23] Compiling Data.ByteString.Lazy.Builder.Extras ( Data/ByteString/Lazy/Builder/Extras.hs, .stack-work/dist/x86_64-linux/Cabal-2.2.0.1/build/Data/ByteString/Lazy/Builder/Extras.o )
+[20 of 23] Compiling Data.ByteString.Builder.ASCII ( Data/ByteString/Builder/ASCII.hs, .stack-work/dist/x86_64-linux/Cabal-2.2.0.1/build/Data/ByteString/Builder/ASCII.o )
+[21 of 23] Compiling Data.ByteString.Builder ( Data/ByteString/Builder.hs, .stack-work/dist/x86_64-linux/Cabal-2.2.0.1/build/Data/ByteString/Builder.o )
+[22 of 23] Compiling Data.ByteString.Lazy.Builder.ASCII ( Data/ByteString/Lazy/Builder/ASCII.hs, .stack-work/dist/x86_64-linux/Cabal-2.2.0.1/build/Data/ByteString/Lazy/Builder/ASCII.o )
+[23 of 23] Compiling Data.ByteString.Lazy.Builder ( Data/ByteString/Lazy/Builder.hs, .stack-work/dist/x86_64-linux/Cabal-2.2.0.1/build/Data/ByteString/Lazy/Builder.o )
+Installing library in /home/bhart/projects/advent/.stack-work/install/x86_64-linux/lts-12.20/8.4.4/lib/x86_64-linux-ghc-8.4.4/bytestring-0.10.8.2-F4PtF3bx1KT1oWZ2qemcR5
+Registering library for bytestring-0.10.8.2..

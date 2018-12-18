@@ -1,0 +1,83 @@
+-- This file has been generated from package.yaml by hpack version 0.28.2.
+--
+-- see: https://github.com/sol/hpack
+--
+-- hash: 1c7f2c119477d0716a897626039f07b9cfe0c40a445ad71d5916e45495be1518
+
+name:           aoc2018
+version:        0.1.0.0
+homepage:       https://github.com/#readme
+bug-reports:    https://github.com//issues
+author:         Ben Hart
+license:        BSD3
+license-file:   LICENSE
+build-type:     Simple
+cabal-version:  >= 1.10
+extra-source-files:
+    ChangeLog.md
+    README.md
+
+source-repository head
+  type: git
+  location: https://github.com/
+
+library
+  exposed-modules:
+      Main
+  other-modules:
+      Paths_aoc2018
+  hs-source-dirs:
+      ./.
+  build-depends:
+      array
+    , base >=4.7 && <5
+    , containers
+    , megaparsec
+    , monad-loops
+    , mtl
+    , parallel
+    , split
+    , text
+    , time
+  default-language: Haskell2010
+
+executable aoc2018-exe
+  main-is: Main.hs
+  other-modules:
+      Paths_aoc2018
+  hs-source-dirs:
+      ./.
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -pgmL markdown-unlit
+  build-depends:
+      aoc2018
+    , base >=4.7 && <5
+    , markdown-unlit
+  default-language: Haskell2010
+
+test-suite aoc2018-test
+  type: exitcode-stdio-1.0
+  main-is: Main.hs
+  other-modules:
+      Paths_aoc2018
+  hs-source-dirs:
+      test
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      aoc2018
+    , base >=4.7 && <5
+    , hspec
+  default-language: Haskell2010
+
+benchmark aoc2018-bench
+  type: exitcode-stdio-1.0
+  main-is: Main.hs
+  other-modules:
+      Paths_aoc2018
+  hs-source-dirs:
+      bench
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      aoc2018
+    , base >=4.7 && <5
+    , criterion
+  default-language: Haskell2010

@@ -1,0 +1,29 @@
+Configuring transformers-0.5.5.0...
+Preprocessing library for transformers-0.5.5.0..
+Building library for transformers-0.5.5.0..
+[ 1 of 24] Compiling Control.Applicative.Backwards ( Control/Applicative/Backwards.hs, .stack-work/dist/x86_64-linux/Cabal-2.2.0.1/build/Control/Applicative/Backwards.o )
+[ 2 of 24] Compiling Control.Monad.Signatures ( Control/Monad/Signatures.hs, .stack-work/dist/x86_64-linux/Cabal-2.2.0.1/build/Control/Monad/Signatures.o )
+[ 3 of 24] Compiling Control.Monad.Trans.Class ( Control/Monad/Trans/Class.hs, .stack-work/dist/x86_64-linux/Cabal-2.2.0.1/build/Control/Monad/Trans/Class.o )
+[ 4 of 24] Compiling Control.Monad.Trans.Cont ( Control/Monad/Trans/Cont.hs, .stack-work/dist/x86_64-linux/Cabal-2.2.0.1/build/Control/Monad/Trans/Cont.o )
+[ 5 of 24] Compiling Control.Monad.Trans.Error ( Control/Monad/Trans/Error.hs, .stack-work/dist/x86_64-linux/Cabal-2.2.0.1/build/Control/Monad/Trans/Error.o )
+[ 6 of 24] Compiling Control.Monad.Trans.Except ( Control/Monad/Trans/Except.hs, .stack-work/dist/x86_64-linux/Cabal-2.2.0.1/build/Control/Monad/Trans/Except.o )
+[ 7 of 24] Compiling Control.Monad.Trans.Identity ( Control/Monad/Trans/Identity.hs, .stack-work/dist/x86_64-linux/Cabal-2.2.0.1/build/Control/Monad/Trans/Identity.o )
+[ 8 of 24] Compiling Control.Monad.Trans.List ( Control/Monad/Trans/List.hs, .stack-work/dist/x86_64-linux/Cabal-2.2.0.1/build/Control/Monad/Trans/List.o )
+[ 9 of 24] Compiling Control.Monad.Trans.Maybe ( Control/Monad/Trans/Maybe.hs, .stack-work/dist/x86_64-linux/Cabal-2.2.0.1/build/Control/Monad/Trans/Maybe.o )
+[10 of 24] Compiling Control.Monad.Trans.RWS.Lazy ( Control/Monad/Trans/RWS/Lazy.hs, .stack-work/dist/x86_64-linux/Cabal-2.2.0.1/build/Control/Monad/Trans/RWS/Lazy.o )
+[11 of 24] Compiling Control.Monad.Trans.RWS ( Control/Monad/Trans/RWS.hs, .stack-work/dist/x86_64-linux/Cabal-2.2.0.1/build/Control/Monad/Trans/RWS.o )
+[12 of 24] Compiling Control.Monad.Trans.RWS.Strict ( Control/Monad/Trans/RWS/Strict.hs, .stack-work/dist/x86_64-linux/Cabal-2.2.0.1/build/Control/Monad/Trans/RWS/Strict.o )
+[13 of 24] Compiling Control.Monad.Trans.Reader ( Control/Monad/Trans/Reader.hs, .stack-work/dist/x86_64-linux/Cabal-2.2.0.1/build/Control/Monad/Trans/Reader.o )
+[14 of 24] Compiling Control.Monad.Trans.Select ( Control/Monad/Trans/Select.hs, .stack-work/dist/x86_64-linux/Cabal-2.2.0.1/build/Control/Monad/Trans/Select.o )
+[15 of 24] Compiling Control.Monad.Trans.State.Lazy ( Control/Monad/Trans/State/Lazy.hs, .stack-work/dist/x86_64-linux/Cabal-2.2.0.1/build/Control/Monad/Trans/State/Lazy.o )
+[16 of 24] Compiling Control.Monad.Trans.State ( Control/Monad/Trans/State.hs, .stack-work/dist/x86_64-linux/Cabal-2.2.0.1/build/Control/Monad/Trans/State.o )
+[17 of 24] Compiling Control.Monad.Trans.State.Strict ( Control/Monad/Trans/State/Strict.hs, .stack-work/dist/x86_64-linux/Cabal-2.2.0.1/build/Control/Monad/Trans/State/Strict.o )
+[18 of 24] Compiling Control.Monad.Trans.Writer.Lazy ( Control/Monad/Trans/Writer/Lazy.hs, .stack-work/dist/x86_64-linux/Cabal-2.2.0.1/build/Control/Monad/Trans/Writer/Lazy.o )
+[19 of 24] Compiling Control.Monad.Trans.Writer ( Control/Monad/Trans/Writer.hs, .stack-work/dist/x86_64-linux/Cabal-2.2.0.1/build/Control/Monad/Trans/Writer.o )
+[20 of 24] Compiling Control.Monad.Trans.Accum ( Control/Monad/Trans/Accum.hs, .stack-work/dist/x86_64-linux/Cabal-2.2.0.1/build/Control/Monad/Trans/Accum.o )
+[21 of 24] Compiling Control.Monad.Trans.Writer.Strict ( Control/Monad/Trans/Writer/Strict.hs, .stack-work/dist/x86_64-linux/Cabal-2.2.0.1/build/Control/Monad/Trans/Writer/Strict.o )
+[22 of 24] Compiling Data.Functor.Constant ( Data/Functor/Constant.hs, .stack-work/dist/x86_64-linux/Cabal-2.2.0.1/build/Data/Functor/Constant.o )
+[23 of 24] Compiling Control.Applicative.Lift ( Control/Applicative/Lift.hs, .stack-work/dist/x86_64-linux/Cabal-2.2.0.1/build/Control/Applicative/Lift.o )
+[24 of 24] Compiling Data.Functor.Reverse ( Data/Functor/Reverse.hs, .stack-work/dist/x86_64-linux/Cabal-2.2.0.1/build/Data/Functor/Reverse.o )
+Installing library in /home/bhart/projects/advent/.stack-work/install/x86_64-linux/lts-12.20/8.4.4/lib/x86_64-linux-ghc-8.4.4/transformers-0.5.5.0-FpiYWor3uzb66CTQOzAW4m
+Registering library for transformers-0.5.5.0..

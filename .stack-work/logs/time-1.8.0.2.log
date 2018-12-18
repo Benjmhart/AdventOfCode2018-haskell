@@ -1,0 +1,82 @@
+[1 of 2] Compiling Main             ( /tmp/stack11872/time-1.8.0.2/Setup.hs, /tmp/stack11872/time-1.8.0.2/.stack-work/dist/x86_64-linux/Cabal-2.2.0.1/setup/Main.o )
+[2 of 2] Compiling StackSetupShim   ( /home/bhart/.stack/setup-exe-src/setup-shim-mPHDZzAJ.hs, /tmp/stack11872/time-1.8.0.2/.stack-work/dist/x86_64-linux/Cabal-2.2.0.1/setup/StackSetupShim.o )
+Linking /tmp/stack11872/time-1.8.0.2/.stack-work/dist/x86_64-linux/Cabal-2.2.0.1/setup/setup ...
+Configuring time-1.8.0.2...
+checking for gcc... /usr/bin/gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether /usr/bin/gcc accepts -g... yes
+checking for /usr/bin/gcc option to accept ISO C89... none needed
+checking how to run the C preprocessor... /usr/bin/gcc -E
+checking for grep that handles long lines and -e... /bin/grep
+checking for egrep... /bin/grep -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking minix/config.h usability... no
+checking minix/config.h presence... no
+checking for minix/config.h... no
+checking whether it is safe to define __EXTENSIONS__... yes
+checking time.h usability... yes
+checking time.h presence... yes
+checking for time.h... yes
+checking for gmtime_r... yes
+checking for localtime_r... yes
+checking for clock_gettime... yes
+checking whether struct tm is in sys/time.h or time.h... time.h
+checking for struct tm.tm_zone... yes
+checking whether time.h and sys/time.h may both be included... yes
+checking sys/time.h usability... yes
+checking sys/time.h presence... yes
+checking for sys/time.h... yes
+checking whether altzone is declared... no
+configure: creating ./config.status
+config.status: creating lib/include/HsTimeConfig.h
+Preprocessing library for time-1.8.0.2..
+Building library for time-1.8.0.2..
+[ 1 of 33] Compiling Data.Time.Calendar.Days ( lib/Data/Time/Calendar/Days.hs, .stack-work/dist/x86_64-linux/Cabal-2.2.0.1/build/Data/Time/Calendar/Days.o )
+[ 2 of 33] Compiling Data.Time.Calendar.Private ( lib/Data/Time/Calendar/Private.hs, .stack-work/dist/x86_64-linux/Cabal-2.2.0.1/build/Data/Time/Calendar/Private.o )
+[ 3 of 33] Compiling Data.Time.Calendar.OrdinalDate ( lib/Data/Time/Calendar/OrdinalDate.hs, .stack-work/dist/x86_64-linux/Cabal-2.2.0.1/build/Data/Time/Calendar/OrdinalDate.o )
+[ 4 of 33] Compiling Data.Time.Calendar.MonthDay ( lib/Data/Time/Calendar/MonthDay.hs, .stack-work/dist/x86_64-linux/Cabal-2.2.0.1/build/Data/Time/Calendar/MonthDay.o )
+[ 5 of 33] Compiling Data.Time.Calendar.JulianYearDay ( lib/Data/Time/Calendar/JulianYearDay.hs, .stack-work/dist/x86_64-linux/Cabal-2.2.0.1/build/Data/Time/Calendar/JulianYearDay.o )
+[ 6 of 33] Compiling Data.Time.Calendar.Julian ( lib/Data/Time/Calendar/Julian.hs, .stack-work/dist/x86_64-linux/Cabal-2.2.0.1/build/Data/Time/Calendar/Julian.o )
+[ 7 of 33] Compiling Data.Time.Calendar.Gregorian ( lib/Data/Time/Calendar/Gregorian.hs, .stack-work/dist/x86_64-linux/Cabal-2.2.0.1/build/Data/Time/Calendar/Gregorian.o )
+[ 8 of 33] Compiling Data.Time.Calendar.WeekDate ( lib/Data/Time/Calendar/WeekDate.hs, .stack-work/dist/x86_64-linux/Cabal-2.2.0.1/build/Data/Time/Calendar/WeekDate.o )
+[ 9 of 33] Compiling Data.Time.Clock.Internal.CTimespec ( .stack-work/dist/x86_64-linux/Cabal-2.2.0.1/build/Data/Time/Clock/Internal/CTimespec.hs, .stack-work/dist/x86_64-linux/Cabal-2.2.0.1/build/Data/Time/Clock/Internal/CTimespec.o )
+[10 of 33] Compiling Data.Time.Clock.Internal.CTimeval ( lib/Data/Time/Clock/Internal/CTimeval.hs, .stack-work/dist/x86_64-linux/Cabal-2.2.0.1/build/Data/Time/Clock/Internal/CTimeval.o )
+[11 of 33] Compiling Data.Time.Clock.Internal.DiffTime ( lib/Data/Time/Clock/Internal/DiffTime.hs, .stack-work/dist/x86_64-linux/Cabal-2.2.0.1/build/Data/Time/Clock/Internal/DiffTime.o )
+[12 of 33] Compiling Data.Time.Clock.Internal.AbsoluteTime ( lib/Data/Time/Clock/Internal/AbsoluteTime.hs, .stack-work/dist/x86_64-linux/Cabal-2.2.0.1/build/Data/Time/Clock/Internal/AbsoluteTime.o )
+[13 of 33] Compiling Data.Time.Clock.Internal.NominalDiffTime ( lib/Data/Time/Clock/Internal/NominalDiffTime.hs, .stack-work/dist/x86_64-linux/Cabal-2.2.0.1/build/Data/Time/Clock/Internal/NominalDiffTime.o )
+[14 of 33] Compiling Data.Time.Clock.Internal.POSIXTime ( lib/Data/Time/Clock/Internal/POSIXTime.hs, .stack-work/dist/x86_64-linux/Cabal-2.2.0.1/build/Data/Time/Clock/Internal/POSIXTime.o )
+[15 of 33] Compiling Data.Time.Clock.Internal.SystemTime ( lib/Data/Time/Clock/Internal/SystemTime.hs, .stack-work/dist/x86_64-linux/Cabal-2.2.0.1/build/Data/Time/Clock/Internal/SystemTime.o )
+[16 of 33] Compiling Data.Time.Clock.Internal.UTCTime ( lib/Data/Time/Clock/Internal/UTCTime.hs, .stack-work/dist/x86_64-linux/Cabal-2.2.0.1/build/Data/Time/Clock/Internal/UTCTime.o )
+[17 of 33] Compiling Data.Time.Clock.Internal.UniversalTime ( lib/Data/Time/Clock/Internal/UniversalTime.hs, .stack-work/dist/x86_64-linux/Cabal-2.2.0.1/build/Data/Time/Clock/Internal/UniversalTime.o )
+[18 of 33] Compiling Data.Time.Clock.System ( lib/Data/Time/Clock/System.hs, .stack-work/dist/x86_64-linux/Cabal-2.2.0.1/build/Data/Time/Clock/System.o )
+[19 of 33] Compiling Data.Time.Clock.POSIX ( lib/Data/Time/Clock/POSIX.hs, .stack-work/dist/x86_64-linux/Cabal-2.2.0.1/build/Data/Time/Clock/POSIX.o )
+[20 of 33] Compiling Data.Time.Clock.Internal.UTCDiff ( lib/Data/Time/Clock/Internal/UTCDiff.hs, .stack-work/dist/x86_64-linux/Cabal-2.2.0.1/build/Data/Time/Clock/Internal/UTCDiff.o )
+[21 of 33] Compiling Data.Time.LocalTime.Internal.TimeZone ( lib/Data/Time/LocalTime/Internal/TimeZone.hs, .stack-work/dist/x86_64-linux/Cabal-2.2.0.1/build/Data/Time/LocalTime/Internal/TimeZone.o )
+[22 of 33] Compiling Data.Time.LocalTime.Internal.TimeOfDay ( lib/Data/Time/LocalTime/Internal/TimeOfDay.hs, .stack-work/dist/x86_64-linux/Cabal-2.2.0.1/build/Data/Time/LocalTime/Internal/TimeOfDay.o )
+[23 of 33] Compiling Data.Time.LocalTime.Internal.LocalTime ( lib/Data/Time/LocalTime/Internal/LocalTime.hs, .stack-work/dist/x86_64-linux/Cabal-2.2.0.1/build/Data/Time/LocalTime/Internal/LocalTime.o )
+[24 of 33] Compiling Data.Time.Format.Locale ( lib/Data/Time/Format/Locale.hs, .stack-work/dist/x86_64-linux/Cabal-2.2.0.1/build/Data/Time/Format/Locale.o )
+[25 of 33] Compiling Data.Time.LocalTime.Internal.ZonedTime ( lib/Data/Time/LocalTime/Internal/ZonedTime.hs, .stack-work/dist/x86_64-linux/Cabal-2.2.0.1/build/Data/Time/LocalTime/Internal/ZonedTime.o )
+[26 of 33] Compiling Data.Time.Format.Parse ( lib/Data/Time/Format/Parse.hs, .stack-work/dist/x86_64-linux/Cabal-2.2.0.1/build/Data/Time/Format/Parse.o )
+[27 of 33] Compiling Data.Time.Format ( lib/Data/Time/Format.hs, .stack-work/dist/x86_64-linux/Cabal-2.2.0.1/build/Data/Time/Format.o )
+[28 of 33] Compiling Data.Time.LocalTime ( lib/Data/Time/LocalTime.hs, .stack-work/dist/x86_64-linux/Cabal-2.2.0.1/build/Data/Time/LocalTime.o )
+[29 of 33] Compiling Data.Time.Clock  ( lib/Data/Time/Clock.hs, .stack-work/dist/x86_64-linux/Cabal-2.2.0.1/build/Data/Time/Clock.o )
+[30 of 33] Compiling Data.Time.Clock.TAI ( lib/Data/Time/Clock/TAI.hs, .stack-work/dist/x86_64-linux/Cabal-2.2.0.1/build/Data/Time/Clock/TAI.o )
+[31 of 33] Compiling Data.Time.Calendar ( lib/Data/Time/Calendar.hs, .stack-work/dist/x86_64-linux/Cabal-2.2.0.1/build/Data/Time/Calendar.o )
+[32 of 33] Compiling Data.Time.Calendar.Easter ( lib/Data/Time/Calendar/Easter.hs, .stack-work/dist/x86_64-linux/Cabal-2.2.0.1/build/Data/Time/Calendar/Easter.o )
+[33 of 33] Compiling Data.Time        ( lib/Data/Time.hs, .stack-work/dist/x86_64-linux/Cabal-2.2.0.1/build/Data/Time.o )
+Installing library in /home/bhart/projects/advent/.stack-work/install/x86_64-linux/lts-12.20/8.4.4/lib/x86_64-linux-ghc-8.4.4/time-1.8.0.2-CjkAGHu56L1Y5sb5sIGWy
+Registering library for time-1.8.0.2..

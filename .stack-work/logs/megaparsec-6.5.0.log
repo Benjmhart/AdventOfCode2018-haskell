@@ -1,0 +1,19 @@
+Configuring megaparsec-6.5.0...
+Preprocessing library for megaparsec-6.5.0..
+Building library for megaparsec-6.5.0..
+[ 1 of 14] Compiling Text.Megaparsec.Pos ( Text/Megaparsec/Pos.hs, .stack-work/dist/x86_64-linux/Cabal-2.2.0.1/build/Text/Megaparsec/Pos.o )
+[ 2 of 14] Compiling Text.Megaparsec.State ( Text/Megaparsec/State.hs, .stack-work/dist/x86_64-linux/Cabal-2.2.0.1/build/Text/Megaparsec/State.o )
+[ 3 of 14] Compiling Text.Megaparsec.Stream ( Text/Megaparsec/Stream.hs, .stack-work/dist/x86_64-linux/Cabal-2.2.0.1/build/Text/Megaparsec/Stream.o )
+[ 4 of 14] Compiling Text.Megaparsec.Error ( Text/Megaparsec/Error.hs, .stack-work/dist/x86_64-linux/Cabal-2.2.0.1/build/Text/Megaparsec/Error.o )
+[ 5 of 14] Compiling Text.Megaparsec.Error.Builder ( Text/Megaparsec/Error/Builder.hs, .stack-work/dist/x86_64-linux/Cabal-2.2.0.1/build/Text/Megaparsec/Error/Builder.o )
+[ 6 of 14] Compiling Text.Megaparsec.Class ( Text/Megaparsec/Class.hs, .stack-work/dist/x86_64-linux/Cabal-2.2.0.1/build/Text/Megaparsec/Class.o )
+[ 7 of 14] Compiling Text.Megaparsec.Internal ( Text/Megaparsec/Internal.hs, .stack-work/dist/x86_64-linux/Cabal-2.2.0.1/build/Text/Megaparsec/Internal.o )
+[ 8 of 14] Compiling Text.Megaparsec  ( Text/Megaparsec.hs, .stack-work/dist/x86_64-linux/Cabal-2.2.0.1/build/Text/Megaparsec.o )
+[ 9 of 14] Compiling Text.Megaparsec.Perm ( Text/Megaparsec/Perm.hs, .stack-work/dist/x86_64-linux/Cabal-2.2.0.1/build/Text/Megaparsec/Perm.o )
+[10 of 14] Compiling Text.Megaparsec.Expr ( Text/Megaparsec/Expr.hs, .stack-work/dist/x86_64-linux/Cabal-2.2.0.1/build/Text/Megaparsec/Expr.o )
+[11 of 14] Compiling Text.Megaparsec.Char ( Text/Megaparsec/Char.hs, .stack-work/dist/x86_64-linux/Cabal-2.2.0.1/build/Text/Megaparsec/Char.o )
+[12 of 14] Compiling Text.Megaparsec.Char.Lexer ( Text/Megaparsec/Char/Lexer.hs, .stack-work/dist/x86_64-linux/Cabal-2.2.0.1/build/Text/Megaparsec/Char/Lexer.o )
+[13 of 14] Compiling Text.Megaparsec.Byte ( Text/Megaparsec/Byte.hs, .stack-work/dist/x86_64-linux/Cabal-2.2.0.1/build/Text/Megaparsec/Byte.o )
+[14 of 14] Compiling Text.Megaparsec.Byte.Lexer ( Text/Megaparsec/Byte/Lexer.hs, .stack-work/dist/x86_64-linux/Cabal-2.2.0.1/build/Text/Megaparsec/Byte/Lexer.o )
+Installing library in /home/bhart/projects/advent/.stack-work/install/x86_64-linux/lts-12.20/8.4.4/lib/x86_64-linux-ghc-8.4.4/megaparsec-6.5.0-4pXjrT28m8W1Gindt1YLqj
+Registering library for megaparsec-6.5.0..
