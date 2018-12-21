@@ -1,0 +1,97 @@
+#ip 5                    IP:5
+0  seti 123 0 3   START: d = 123
+1  bani 3 456 3          d = d & 456
+2  eqri 3 72 3           IF d==72 ? d=1 : d=0  
+3  addr 3 5 5            THEN GOTO L1:
+4  seti 0 0 5            ELSE GOTO START
+5  seti 0 9 3        L1: d = 0
+6  bori 3 65536 1        b = (d=1) | 65536
+7  seti 14906355 8 3     d = 14906355
+8  bani 1 255 4      L8: e = b & 255
+9  addr 3 4 3            d = d + e (65791)
+10 bani 3 16777215 3     d = d & 16777215 (65791)
+11 muli 3 65899 3        d = d * 65899 (4335561109)
+12 bani 3 16777215 3     d = d & 16777215 (7039381)
+13 gtir 256 1 4          IF 256 > b ? e = 1 : e = 0 (F) 
+14 addr 4 5 5            THEN GOTO L3
+15 addi 5 1 5            ELSE GOTO L2
+16 seti 27 8 5       L3: GOTO L4
+17 seti 0 4 4        L2: e = 0
+18 addi 4 1 2        L9: c = e+1 (1)
+19 muli 2 256 2          c = c*256 (256)
+20 gtrr 2 1 2            IF c > b     
+21 addr 2 5 5            THEN GOTO L6
+22 addi 5 1 5            ELSE GOTO L5
+23 seti 25 1 5       L6: GOTO L7 (26)
+24 addi 4 1 4        L5: e=e+1 (1)
+25 seti 17 2 5           GOTO L9
+26 setr 4 9 1        L7: b = e
+27 seti 7 0 5            GOTO L8
+28 eqrr 3 0 4        L4: IF a == d (e=1:0)
+29 addr 4 5 5            THEN BREAK
+30 seti 5 3 5            ELSE GOTO L1
+
+ 0 1 2 3 4 5
+ a b c d e ip
+[0,0,0,0,0,0]
+a=0
+b=65536
+c=1
+d=7891345
+e=1
+
+lines 0-4 can be discarded I think
+
+we need to know the value of d the first time 256 > b
+
+
+
+
+let d = 14906355
+let b = 65536
+
+// 1st time entry a-? b= 256 c=65792 d=7891345 e=256
+// 2nd time entry a=? b= 1   c=512   d=5157019 e=1
+// 3rd time entry a=? b= 0   c=256   d=3173684 e=0
+while (true){
+  let e = b & 255    
+  // 0th time : 65536 .&. 255                                            ---- e=0
+  // 1st time : 256 .&. 255                                                               ---- e=0
+  // 2nd time : 1 .&. 255                                                                                ---- e==1
+  // 3rd time : 0 .&. 255                                                                                             ----e=0
+  d = ((((d + e) & 16777215) * 65899) & 16777215) 
+  // 0th time : ((((14906355 + 0) .&. 16777215) * 65899) .&. 16777215)   ---- d=7891345
+  // 1st time :  ((((7891345 + 0) .&. 16777215) * 65899) .&. 16777215)                    ---- d=5157019
+  // 2nd time :  ((((5157019 + 1) .&. 16777215) * 65899) .&. 16777215)                                   ---- d=3173684
+  // 3rd time :  ((((3173684 + 0) .&. 16777215) * 65899) .&. 16777215)
+                                                 ----d=14604476
+
+  // 0th time 256 > 65536  - False
+  // 1st time 256 > 256    - False
+  // 2nd time 256 > 1      - True
+  // 3rd time 256 > 0      - True
+  if (256 > b) {
+
+    if a == d {
+      return
+    }
+  } 
+
+  // 0th time values = a=? b= 65536 c=0 d=7891345 e=0
+  // 1st time values = a=? b= 256   c=65792 d=5157019 e = 256
+  // 2nd time values = a=? b= 1     c=512   d=3173684 e = 1
+  // 3rd time values = a=? b= 0     c=256   d=14604476 e = 0
+  for (e=0; ((e +1) * 256) > b :e++) {
+        e = 0
+    let c = e + 1 * 256
+  }
+  // 0th time exit a-? b= 65536 c=65792 d=7891345  e=256
+  // 1st time exit a=? b= 256   c=512   d=5157019  e=1
+  // 2nd time exit a=? b= 1     c=256   d=3173684  e=0
+  // 3rd time exit a=? b= 0     c=256   d=14604476 e = 0
+  b = e
+  // 0th time exit a-? b= 256 c=65792 d=7891345 e=256
+  // 1st time exit a=? b= 1   c=512   d=5157019 e=1
+  // 2nd time exit a=? b= 0   c=256   d=3173684 e=0
+}
+
