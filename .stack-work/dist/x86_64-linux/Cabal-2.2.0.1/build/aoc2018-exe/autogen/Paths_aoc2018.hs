@@ -30,7 +30,7 @@ version = Version [0,1,0,0] []
 bindir, libdir, dynlibdir, datadir, libexecdir, sysconfdir :: FilePath
 
 bindir     = "/home/bhart/projects/advent/.stack-work/install/x86_64-linux/lts-12.20/8.4.4/bin"
-libdir     = "/home/bhart/projects/advent/.stack-work/install/x86_64-linux/lts-12.20/8.4.4/lib/x86_64-linux-ghc-8.4.4/aoc2018-0.1.0.0-95WowAF3ZTKFWvs7qNui0J-aoc2018-exe"
+libdir     = "/home/bhart/projects/advent/.stack-work/install/x86_64-linux/lts-12.20/8.4.4/lib/x86_64-linux-ghc-8.4.4/aoc2018-0.1.0.0-GLf9n0d8GLlKAbTXmA65Bh-aoc2018-exe"
 dynlibdir  = "/home/bhart/projects/advent/.stack-work/install/x86_64-linux/lts-12.20/8.4.4/lib/x86_64-linux-ghc-8.4.4"
 datadir    = "/home/bhart/projects/advent/.stack-work/install/x86_64-linux/lts-12.20/8.4.4/share/x86_64-linux-ghc-8.4.4/aoc2018-0.1.0.0"
 libexecdir = "/home/bhart/projects/advent/.stack-work/install/x86_64-linux/lts-12.20/8.4.4/libexec/x86_64-linux-ghc-8.4.4/aoc2018-0.1.0.0"

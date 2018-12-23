@@ -1,0 +1,6 @@
+Configuring astar-0.3.0.0...
+Preprocessing library for astar-0.3.0.0..
+Building library for astar-0.3.0.0..
+[1 of 1] Compiling Data.Graph.AStar ( src/Data/Graph/AStar.hs, .stack-work/dist/x86_64-linux/Cabal-2.2.0.1/build/Data/Graph/AStar.o )
+Installing library in /home/bhart/projects/advent/.stack-work/install/x86_64-linux/lts-12.20/8.4.4/lib/x86_64-linux-ghc-8.4.4/astar-0.3.0.0-2zmtSF1LT2yJ6HPFK7Zcu
+Registering library for astar-0.3.0.0..

@@ -121,6 +121,39 @@
   (major1) == 1 && (major2) == 8 && (minor) <= 0)
 #endif /* MIN_VERSION_time */
 
+/* package astar-0.3.0.0 */
+#ifndef VERSION_astar
+#define VERSION_astar "0.3.0.0"
+#endif /* VERSION_astar */
+#ifndef MIN_VERSION_astar
+#define MIN_VERSION_astar(major1,major2,minor) (\
+  (major1) <  0 || \
+  (major1) == 0 && (major2) <  3 || \
+  (major1) == 0 && (major2) == 3 && (minor) <= 0)
+#endif /* MIN_VERSION_astar */
+
+/* package unordered-containers-0.2.9.0 */
+#ifndef VERSION_unordered_containers
+#define VERSION_unordered_containers "0.2.9.0"
+#endif /* VERSION_unordered_containers */
+#ifndef MIN_VERSION_unordered_containers
+#define MIN_VERSION_unordered_containers(major1,major2,minor) (\
+  (major1) <  0 || \
+  (major1) == 0 && (major2) <  2 || \
+  (major1) == 0 && (major2) == 2 && (minor) <= 9)
+#endif /* MIN_VERSION_unordered_containers */
+
+/* package hashable-1.2.7.0 */
+#ifndef VERSION_hashable
+#define VERSION_hashable "1.2.7.0"
+#endif /* VERSION_hashable */
+#ifndef MIN_VERSION_hashable
+#define MIN_VERSION_hashable(major1,major2,minor) (\
+  (major1) <  1 || \
+  (major1) == 1 && (major2) <  2 || \
+  (major1) == 1 && (major2) == 2 && (minor) <= 7)
+#endif /* MIN_VERSION_hashable */
+
 /* tool alex-3.2.3 */
 #ifndef TOOL_VERSION_alex
 #define TOOL_VERSION_alex "3.2.3"
@@ -254,10 +287,10 @@
 #endif /* MIN_TOOL_VERSION_strip */
 
 #ifndef CURRENT_PACKAGE_KEY
-#define CURRENT_PACKAGE_KEY "aoc2018-0.1.0.0-DhG3pG9U1r48SDJ29tkchl"
+#define CURRENT_PACKAGE_KEY "aoc2018-0.1.0.0-Br2pEtNse1GARruciuAsDx"
 #endif /* CURRENT_PACKAGE_KEY */
 #ifndef CURRENT_COMPONENT_ID
-#define CURRENT_COMPONENT_ID "aoc2018-0.1.0.0-DhG3pG9U1r48SDJ29tkchl"
+#define CURRENT_COMPONENT_ID "aoc2018-0.1.0.0-Br2pEtNse1GARruciuAsDx"
 #endif /* CURRENT_COMPONENT_ID */
 #ifndef CURRENT_PACKAGE_VERSION
 #define CURRENT_PACKAGE_VERSION "0.1.0.0"

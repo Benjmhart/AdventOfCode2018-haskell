@@ -1,11 +1,11 @@
 
 ==================== FINAL INTERFACE ====================
-2018-12-18 04:51:24.980466908 UTC
+2018-12-22 16:54:14.18862508 UTC
 
-interface aoc2018-0.1.0.0-DhG3pG9U1r48SDJ29tkchl:Paths_aoc2018 8044
-  interface hash: 70cb7c1ebd3447967a1dadec8935bb07
-  ABI hash: e5b6a265bb84c1f9de1e1e29c09529bc
-  export-list hash: e1839b299bcb6c67e18695bea9d5ac8c
+interface aoc2018-0.1.0.0-Br2pEtNse1GARruciuAsDx:Paths_aoc2018 8044
+  interface hash: a3ba92735c11e51e3d529459642dab6f
+  ABI hash: 506ce5590d7daf2a3c98477341dbb4ea
+  export-list hash: 33ecebcc46191dbf0b99a0bfa3cd9870
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
   flag hash: 72621d698ef0939281be75fd58e3a4ef
   opt_hash: 2c98c95d41c045ae9c2fb565ec8aabc6
@@ -40,37 +40,37 @@ import  -/  base-4.11.1.0:Prelude 0750c25585e2b797cd78291d423d39dd
 import  -/  base-4.11.1.0:System.Environment 06420d98d10ee04b8dda9c0d88032c55
 import  -/  ghc-prim-0.5.2.0:GHC.Types d9b3023de7feae4a5308d643da5543f7
 addDependentFile "/home/bhart/.stack/programs/x86_64-linux/ghc-8.4.4/lib/ghc-8.4.4/include/ghcversion.h" dc95dadad7fc31af17d70482a2bf3d6d
-addDependentFile ".stack-work/dist/x86_64-linux/Cabal-2.2.0.1/build/autogen/cabal_macros.h" 9f6c2fe22f85679b9ef26bad31f26840
+addDependentFile ".stack-work/dist/x86_64-linux/Cabal-2.2.0.1/build/autogen/cabal_macros.h" e0c4c537707a3a07b32c589662cd441e
 addDependentFile "/usr/include/stdc-predef.h" 64086a4476ea583071277345b423d741
-95a67207b2743891220bee6d9df965e8
+a20cf311aeffdaefd745c88a87850112
   $trModule :: GHC.Types.Module
   {- HasNoCafRefs, Strictness: m,
      Unfolding: (GHC.Types.Module
                    Paths_aoc2018.$trModule3
                    Paths_aoc2018.$trModule1) -}
-f2129a0d4188f7dba7854cbe60d26433
+8899205887e14eea7b9e149acb85cba5
   $trModule1 :: GHC.Types.TrName
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS Paths_aoc2018.$trModule2) -}
-774ce80b75f8dc7226297b44ce35e7bd
+2439479aa9a57aad5b49bce447958ad6
   $trModule2 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("Paths_aoc2018"#) -}
-44bbe662175f273c5a381a68722ff105
+3c9603eb6f82dac23b698581eadacb4a
   $trModule3 :: GHC.Types.TrName
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS Paths_aoc2018.$trModule4) -}
-00a334492eb0d73aa760c9b692adf978
+9940f482ec48bd26263dd76d1d9443a5
   $trModule4 :: GHC.Prim.Addr#
   {- HasNoCafRefs,
-     Unfolding: ("aoc2018-0.1.0.0-DhG3pG9U1r48SDJ29tkchl"#) -}
-0ecc5a953861b06a73f8adb658c55082
+     Unfolding: ("aoc2018-0.1.0.0-Br2pEtNse1GARruciuAsDx"#) -}
+00f23530de44e051ee67282a367ba259
   getBinDir :: GHC.Types.IO GHC.IO.FilePath
   {- Arity: 1, Strictness: <S,U>,
      Unfolding: InlineRule (0, True, True)
                 Paths_aoc2018.getBinDir1
                   `cast`
                 (Sym (GHC.Types.N:IO[0] <GHC.Base.String>_R)) -}
-7253b5926636d7bf0b6741896a6a6631
+383001000c61813e370b1853ae7f5991
   getBinDir1 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
@@ -82,7 +82,7 @@ f2129a0d4188f7dba7854cbe60d26433
                    Paths_aoc2018.getBinDir5
                    Paths_aoc2018.getBinDir2
                    eta) -}
-bed1caca446540e726f6b7f07948281b
+896c4824bc3693bb32837dfaf3da9d60
   getBinDir2 ::
     GHC.Exception.SomeException
     -> GHC.Prim.State# GHC.Prim.RealWorld
@@ -114,15 +114,15 @@ bed1caca446540e726f6b7f07948281b
                              wild
                              eta
                         1# -> (# eta, Paths_aoc2018.getBinDir3 #) } } } } }) -}
-7765752da15b065add0db60b78bf59fa
+1e628dc88872eb1673a26850ce7e9971
   getBinDir3 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString#
                    Paths_aoc2018.getBinDir4) -}
-9ef29469a374c8430dc3f7b135e6f22f
+0b0db3debfbdc111f109ba64cac3f86c
   getBinDir4 :: GHC.Prim.Addr#
   {- HasNoCafRefs,
      Unfolding: ("/home/bhart/projects/advent/.stack-work/install/x86_64-linux/lts-12.20/8.4.4/bin"#) -}
-631e1c4770b0de0b143cc33b87c49ae8
+80c18fcfd480ec35ae1ae777f7c8925e
   getBinDir5 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
@@ -147,21 +147,21 @@ bed1caca446540e726f6b7f07948281b
                    GHC.Base.Nothing
                    -> System.Environment.getEnv2 ipv2 Paths_aoc2018.getBinDir6
                    GHC.Base.Just x -> (# ipv2, x #) } } }) -}
-9020b0d5a159fc71160eba4e0a7acbcb
+48b9418b905db3c0ad87b728c6666fdc
   getBinDir6 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString#
                    Paths_aoc2018.getBinDir7) -}
-d152d4dc555f75421c2719f8336af314
+b5b58bd8715b24e6e7b7784f7eed568f
   getBinDir7 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("aoc2018_bindir"#) -}
-2ba48a6ac9ac011e90f7796d3c92187f
+3dcfe527fc57a53059e28363617d6851
   getDataDir :: GHC.Types.IO GHC.IO.FilePath
   {- Arity: 1, Strictness: <S,U>,
      Unfolding: InlineRule (0, True, True)
                 Paths_aoc2018.getDataDir1
                   `cast`
                 (Sym (GHC.Types.N:IO[0] <GHC.Base.String>_R)) -}
-a58b404951e096453ad82923e38919fe
+26ed22aa163db5a0775d68e044303ec0
   getDataDir1 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
@@ -173,7 +173,7 @@ a58b404951e096453ad82923e38919fe
                    Paths_aoc2018.getDataDir5
                    Paths_aoc2018.getDataDir2
                    eta) -}
-42a54de34cc624818299a46fa22491be
+5e18641d120261aed19b4f1ea2db90a6
   getDataDir2 ::
     GHC.Exception.SomeException
     -> GHC.Prim.State# GHC.Prim.RealWorld
@@ -205,15 +205,15 @@ a58b404951e096453ad82923e38919fe
                              wild
                              eta
                         1# -> (# eta, Paths_aoc2018.getDataDir3 #) } } } } }) -}
-e90af8831a85a885386ad26cbd95164d
+a8b4469cc4558ad77f76eae9ed4ada9a
   getDataDir3 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString#
                    Paths_aoc2018.getDataDir4) -}
-5bc529a8a9dafe6341410ecb2bbd5a86
+3c9532042218befef5053d9e68ed36d5
   getDataDir4 :: GHC.Prim.Addr#
   {- HasNoCafRefs,
      Unfolding: ("/home/bhart/projects/advent/.stack-work/install/x86_64-linux/lts-12.20/8.4.4/share/x86_64-linux-ghc-8.4.4/aoc2018-0.1.0.0"#) -}
-a276e5cbe18f32cecfd679bc012691c7
+e6d398c3cd11b8c04696f43e514d8f72
   getDataDir5 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
@@ -238,14 +238,14 @@ a276e5cbe18f32cecfd679bc012691c7
                    GHC.Base.Nothing
                    -> System.Environment.getEnv2 ipv2 Paths_aoc2018.getDataDir6
                    GHC.Base.Just x -> (# ipv2, x #) } } }) -}
-594a1b960651b7875857a340785c5888
+79ee1dd2a9efdad255cdcc5986c58254
   getDataDir6 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString#
                    Paths_aoc2018.getDataDir7) -}
-737fa69fdd7d09693280f6ec1b751a63
+b2c5b114afa7b4b2211aae00efbdce49
   getDataDir7 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("aoc2018_datadir"#) -}
-ed35a64ccd3df4a794c773417a1a0bec
+6a875958f268a90432c65250d7d5fb17
   getDataFileName :: GHC.IO.FilePath -> GHC.Types.IO GHC.IO.FilePath
   {- Arity: 2, Strictness: <L,U><S,U>,
      Unfolding: InlineRule (0, True, True)
@@ -253,7 +253,7 @@ ed35a64ccd3df4a794c773417a1a0bec
                   `cast`
                 (<GHC.IO.FilePath>_R
                  ->_R Sym (GHC.Types.N:IO[0] <GHC.IO.FilePath>_R)) -}
-69f52e5d8f8fd219e439b28302e1508d
+6bb4a25e9b8a06942e4826e832cfe9bd
   getDataFileName1 ::
     GHC.IO.FilePath
     -> GHC.Prim.State# GHC.Prim.RealWorld
@@ -274,17 +274,17 @@ ed35a64ccd3df4a794c773417a1a0bec
                       (GHC.CString.unpackAppendCString#
                          Paths_aoc2018.getDataFileName2
                          name) #) }) -}
-1de202b90c252eff39a94a689afbc1e0
+efa9de1350da81dd71cffb952228b280
   getDataFileName2 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("/"#) -}
-24eac90ed450fd2771522cdca5b6c8c9
+5ddf62460d846b22611831742d48923a
   getDynLibDir :: GHC.Types.IO GHC.IO.FilePath
   {- Arity: 1, Strictness: <S,U>,
      Unfolding: InlineRule (0, True, True)
                 Paths_aoc2018.getDynLibDir1
                   `cast`
                 (Sym (GHC.Types.N:IO[0] <GHC.Base.String>_R)) -}
-bdcfd7be16951aa6ce695ebbcbce85bd
+a0dc1a12eccce317a3808d9ea599c9fd
   getDynLibDir1 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
@@ -296,7 +296,7 @@ bdcfd7be16951aa6ce695ebbcbce85bd
                    Paths_aoc2018.getDynLibDir5
                    Paths_aoc2018.getDynLibDir2
                    eta) -}
-c9a2a38674c2bf535ded574f464c0fdd
+40e73a1f6563c06345be618b238cb770
   getDynLibDir2 ::
     GHC.Exception.SomeException
     -> GHC.Prim.State# GHC.Prim.RealWorld
@@ -328,15 +328,15 @@ c9a2a38674c2bf535ded574f464c0fdd
                              wild
                              eta
                         1# -> (# eta, Paths_aoc2018.getDynLibDir3 #) } } } } }) -}
-708c1644d5aa9a8c2b994760b07b7fbc
+5a22f4e3580d9375178c0e14f8d50d4c
   getDynLibDir3 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString#
                    Paths_aoc2018.getDynLibDir4) -}
-2026ad88acc25e3cc096c05147f3cac7
+d78de85b42cecf3e7852bf539ed26406
   getDynLibDir4 :: GHC.Prim.Addr#
   {- HasNoCafRefs,
      Unfolding: ("/home/bhart/projects/advent/.stack-work/install/x86_64-linux/lts-12.20/8.4.4/lib/x86_64-linux-ghc-8.4.4"#) -}
-905a73fea038b57f8141408a6fb39ef9
+9863e95b2d1d336be0d3ed138af8b06c
   getDynLibDir5 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
@@ -361,21 +361,21 @@ c9a2a38674c2bf535ded574f464c0fdd
                    GHC.Base.Nothing
                    -> System.Environment.getEnv2 ipv2 Paths_aoc2018.getDynLibDir6
                    GHC.Base.Just x -> (# ipv2, x #) } } }) -}
-420bfa4a2c2636010f0f2a06d4bd8dd4
+ec6cbd00bc54906065e280a5ef8484d5
   getDynLibDir6 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString#
                    Paths_aoc2018.getDynLibDir7) -}
-5016b09d2334712187dfb043e408bf7f
+f2b0919a77f8b99d6304836d73d5f8f0
   getDynLibDir7 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("aoc2018_dynlibdir"#) -}
-fa84902d4e9ad6b0bc5f13364b897a71
+9ca33ce889a1af4137a6c814a96bb380
   getLibDir :: GHC.Types.IO GHC.IO.FilePath
   {- Arity: 1, Strictness: <S,U>,
      Unfolding: InlineRule (0, True, True)
                 Paths_aoc2018.getLibDir1
                   `cast`
                 (Sym (GHC.Types.N:IO[0] <GHC.Base.String>_R)) -}
-9e2343d614e4407a5fc88fdc756d7c58
+3f82e266eaf436112e940068d5418aa7
   getLibDir1 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
@@ -387,7 +387,7 @@ fa84902d4e9ad6b0bc5f13364b897a71
                    Paths_aoc2018.getLibDir5
                    Paths_aoc2018.getLibDir2
                    eta) -}
-ce9bceb2fac4213246a71d0506ce65ed
+7200e40ee4df8ec0a2b167199a527bc6
   getLibDir2 ::
     GHC.Exception.SomeException
     -> GHC.Prim.State# GHC.Prim.RealWorld
@@ -419,15 +419,15 @@ ce9bceb2fac4213246a71d0506ce65ed
                              wild
                              eta
                         1# -> (# eta, Paths_aoc2018.getLibDir3 #) } } } } }) -}
-9065d5f8413017f7addb38a1f154d03a
+91247869f4e45bb4ff82994751b0597f
   getLibDir3 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString#
                    Paths_aoc2018.getLibDir4) -}
-456750e31433194957e7d5467950d0f6
+2a1639501cc8eeca73292a03ce61514b
   getLibDir4 :: GHC.Prim.Addr#
   {- HasNoCafRefs,
-     Unfolding: ("/home/bhart/projects/advent/.stack-work/install/x86_64-linux/lts-12.20/8.4.4/lib/x86_64-linux-ghc-8.4.4/aoc2018-0.1.0.0-DhG3pG9U1r48SDJ29tkchl"#) -}
-c27caa2908863464c2e6dc9a85871686
+     Unfolding: ("/home/bhart/projects/advent/.stack-work/install/x86_64-linux/lts-12.20/8.4.4/lib/x86_64-linux-ghc-8.4.4/aoc2018-0.1.0.0-Br2pEtNse1GARruciuAsDx"#) -}
+e4aefcf7bc3221a6ec0fcbd3752763ca
   getLibDir5 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
@@ -452,21 +452,21 @@ c27caa2908863464c2e6dc9a85871686
                    GHC.Base.Nothing
                    -> System.Environment.getEnv2 ipv2 Paths_aoc2018.getLibDir6
                    GHC.Base.Just x -> (# ipv2, x #) } } }) -}
-df920709f4f6a12382acb1bf82553e4e
+17b3de5290e541ec7269439ab2e9c01f
   getLibDir6 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString#
                    Paths_aoc2018.getLibDir7) -}
-46af6646cd2d3793dbd759e4c7c6a46d
+e68a58553b510c47a553c708a7cd2b62
   getLibDir7 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("aoc2018_libdir"#) -}
-93de0cb2d77bbe928ac61996d6a6ad06
+5d86e0b0a89e7eb2b4bbe9e9bbab8940
   getLibexecDir :: GHC.Types.IO GHC.IO.FilePath
   {- Arity: 1, Strictness: <S,U>,
      Unfolding: InlineRule (0, True, True)
                 Paths_aoc2018.getLibexecDir1
                   `cast`
                 (Sym (GHC.Types.N:IO[0] <GHC.Base.String>_R)) -}
-fa8673bdfbd8cf453094eb468e07dc67
+d541ea4a5851ab42da866053f2ca7d83
   getLibexecDir1 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
@@ -478,7 +478,7 @@ fa8673bdfbd8cf453094eb468e07dc67
                    Paths_aoc2018.getLibexecDir5
                    Paths_aoc2018.getLibexecDir2
                    eta) -}
-a5b74e7fc8225797ab0c77ae1fe4fd53
+db421c32b3daa5b15f4ad7ae17168af6
   getLibexecDir2 ::
     GHC.Exception.SomeException
     -> GHC.Prim.State# GHC.Prim.RealWorld
@@ -510,15 +510,15 @@ a5b74e7fc8225797ab0c77ae1fe4fd53
                              wild
                              eta
                         1# -> (# eta, Paths_aoc2018.getLibexecDir3 #) } } } } }) -}
-564cf76fea43765ea13ae2aeb5ab079d
+7feb27ee10deaf3eebc0a81d86619add
   getLibexecDir3 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString#
                    Paths_aoc2018.getLibexecDir4) -}
-9ef8777ced6a8f21ebc17b7f8785dfea
+d13f5c84b29810584ba93305b86224c7
   getLibexecDir4 :: GHC.Prim.Addr#
   {- HasNoCafRefs,
      Unfolding: ("/home/bhart/projects/advent/.stack-work/install/x86_64-linux/lts-12.20/8.4.4/libexec/x86_64-linux-ghc-8.4.4/aoc2018-0.1.0.0"#) -}
-0aec3ec4bdf8e0e5340d6df821dc4551
+96d84566316cdc443c5fa036a5ae9184
   getLibexecDir5 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
@@ -543,21 +543,21 @@ a5b74e7fc8225797ab0c77ae1fe4fd53
                    GHC.Base.Nothing
                    -> System.Environment.getEnv2 ipv2 Paths_aoc2018.getLibexecDir6
                    GHC.Base.Just x -> (# ipv2, x #) } } }) -}
-069f362bb8bbcac39cd4665f15e451ce
+bcd365d41f67c4f97239077166f7155f
   getLibexecDir6 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString#
                    Paths_aoc2018.getLibexecDir7) -}
-ab02ea3529943be5d4bd8f0c44cc1cfc
+c7818f5b27612927f806078e315644fc
   getLibexecDir7 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("aoc2018_libexecdir"#) -}
-35b97d38f3e47e1f17140b9d45506db6
+0625e2c7c0c20fae4ffc7ff19da0f4c4
   getSysconfDir :: GHC.Types.IO GHC.IO.FilePath
   {- Arity: 1, Strictness: <S,U>,
      Unfolding: InlineRule (0, True, True)
                 Paths_aoc2018.getSysconfDir1
                   `cast`
                 (Sym (GHC.Types.N:IO[0] <GHC.Base.String>_R)) -}
-b1c4ac44ccc4d4b5427bff0094c5acf7
+6da8ac9d0abb7355a449904c6dd9551d
   getSysconfDir1 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
@@ -569,7 +569,7 @@ b1c4ac44ccc4d4b5427bff0094c5acf7
                    Paths_aoc2018.getSysconfDir5
                    Paths_aoc2018.getSysconfDir2
                    eta) -}
-40d0f4df824233d31324ea315ac02c46
+81410c13ffa64b448f8f3d381fa92ddd
   getSysconfDir2 ::
     GHC.Exception.SomeException
     -> GHC.Prim.State# GHC.Prim.RealWorld
@@ -601,15 +601,15 @@ b1c4ac44ccc4d4b5427bff0094c5acf7
                              wild
                              eta
                         1# -> (# eta, Paths_aoc2018.getSysconfDir3 #) } } } } }) -}
-f1257d30ee8d4a50e927450ded6396af
+a83653320ae0fb5981a31b87d2b13016
   getSysconfDir3 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString#
                    Paths_aoc2018.getSysconfDir4) -}
-eec7ab6835bf4878cf7603858d31908e
+5834233d3e63cf9f2420e9253eff94c7
   getSysconfDir4 :: GHC.Prim.Addr#
   {- HasNoCafRefs,
      Unfolding: ("/home/bhart/projects/advent/.stack-work/install/x86_64-linux/lts-12.20/8.4.4/etc"#) -}
-43c9bae01d3b04330abcbd6ace946be7
+3dff5a556043d874f678d222d159c5fa
   getSysconfDir5 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
@@ -634,51 +634,51 @@ eec7ab6835bf4878cf7603858d31908e
                    GHC.Base.Nothing
                    -> System.Environment.getEnv2 ipv2 Paths_aoc2018.getSysconfDir6
                    GHC.Base.Just x -> (# ipv2, x #) } } }) -}
-00d6babfa5f107562e6456d95729f51c
+d14e34ed7df4b58c8346bd44dcb3c5b4
   getSysconfDir6 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString#
                    Paths_aoc2018.getSysconfDir7) -}
-9a56b4fe0136a963ed45df7908b2c6b7
+709dae13d6bff2957de95e8aefc2a81c
   getSysconfDir7 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("aoc2018_sysconfdir"#) -}
-8537bbc5e95884b99e88039e3bbeec20
+301ea3b04ba1748e1e1b28682f217439
   version :: Data.Version.Version
   {- HasNoCafRefs, Strictness: m,
      Unfolding: (Data.Version.Version
                    Paths_aoc2018.version1
                    (GHC.Types.[] @ GHC.Base.String)) -}
-e113519c64b0c74cc604c392e28b8409
+e05257d9bb030ebdc6e229905b1e8847
   version1 :: [GHC.Types.Int]
   {- HasNoCafRefs, Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ GHC.Types.Int
                    Paths_aoc2018.version5
                    Paths_aoc2018.version2) -}
-33630dbd85bf511a917ec87aa0cdf764
+c9f2ce177cd117138406dfd8516f8a53
   version2 :: [GHC.Types.Int]
   {- HasNoCafRefs, Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ GHC.Types.Int
                    Paths_aoc2018.version6
                    Paths_aoc2018.version3) -}
-23a7a24107568fa9fc9fa684071d96fb
+1887cf7b75dff0ff059360f9759b1efd
   version3 :: [GHC.Types.Int]
   {- HasNoCafRefs, Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ GHC.Types.Int
                    Paths_aoc2018.version5
                    Paths_aoc2018.version4) -}
-30c04474c4f843f612f8bba454c55b8e
+6882d36f64c84a9eeb2128a82959a563
   version4 :: [GHC.Types.Int]
   {- HasNoCafRefs, Strictness: m2,
      Unfolding: (GHC.Types.:
                    @ GHC.Types.Int
                    Paths_aoc2018.version5
                    (GHC.Types.[] @ GHC.Types.Int)) -}
-c035a21440ead0b8794fa5bdb6611514
+9c4abe2889bfa5035dfde171ea903ba9
   version5 :: GHC.Types.Int
   {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 0#) -}
-05e0f41f658a3fee136de03fc661dc7a
+e8b9005548cee02b34f932818925c896
   version6 :: GHC.Types.Int
   {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 1#) -}
 vectorised variables:

@@ -1,10 +1,10 @@
 
 ==================== FINAL INTERFACE ====================
-2018-12-18 04:51:26.02621105 UTC
+2018-12-22 16:54:15.28152593 UTC
 
 interface main:Paths_aoc2018 8044
-  interface hash: d5239cc37a3dd0342d12d2d239997ba0
-  ABI hash: 2cdaf1e28e0ff61eace15913d214be68
+  interface hash: 119c6d5abafc4c66ee68d9ec428abd39
+  ABI hash: 8668dce7f6c364cae2262412ecf2dcca
   export-list hash: 116e25424e19f8e8f1dba66dccb31541
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
   flag hash: c7edd089ddf2918ebbde586111093df0
@@ -40,7 +40,7 @@ import  -/  base-4.11.1.0:Prelude 0750c25585e2b797cd78291d423d39dd
 import  -/  base-4.11.1.0:System.Environment 06420d98d10ee04b8dda9c0d88032c55
 import  -/  ghc-prim-0.5.2.0:GHC.Types d9b3023de7feae4a5308d643da5543f7
 addDependentFile "/home/bhart/.stack/programs/x86_64-linux/ghc-8.4.4/lib/ghc-8.4.4/include/ghcversion.h" dc95dadad7fc31af17d70482a2bf3d6d
-addDependentFile ".stack-work/dist/x86_64-linux/Cabal-2.2.0.1/build/aoc2018-exe/autogen/cabal_macros.h" 6b094145282ca2eefd2b7203d8a16c4f
+addDependentFile ".stack-work/dist/x86_64-linux/Cabal-2.2.0.1/build/aoc2018-exe/autogen/cabal_macros.h" 21c9e7cf58ea24ea4fb023a6131211e8
 addDependentFile "/usr/include/stdc-predef.h" 64086a4476ea583071277345b423d741
 92f1c3e1c99bcdefa0285906505524f8
   $trModule :: GHC.Types.Module
@@ -367,14 +367,14 @@ da5b60340928435b6c93b6420dd58c98
 55097f2db257912ab500cb75c81f514d
   getDynLibDir7 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("aoc2018_dynlibdir"#) -}
-413991c51040f579f7203cd5de328af8
+ccf81b2ec2ebecdcdfa93d5843b9190c
   getLibDir :: GHC.Types.IO GHC.IO.FilePath
   {- Arity: 1, Strictness: <S,U>,
      Unfolding: InlineRule (0, True, True)
                 Paths_aoc2018.getLibDir1
                   `cast`
                 (Sym (GHC.Types.N:IO[0] <GHC.Base.String>_R)) -}
-9ba0991de0de7908b4f440ba23bb1000
+a166e72c49a8c0867344741e8560ce71
   getLibDir1 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
@@ -386,7 +386,7 @@ da5b60340928435b6c93b6420dd58c98
                    Paths_aoc2018.getLibDir5
                    Paths_aoc2018.getLibDir2
                    eta) -}
-61bb0eb9617c801ecc82d6f1d70da355
+61686ce0544896867c93d30cd0365709
   getLibDir2 ::
     GHC.Exception.SomeException
     -> GHC.Prim.State# GHC.Prim.RealWorld
@@ -418,14 +418,14 @@ da5b60340928435b6c93b6420dd58c98
                              wild
                              eta
                         1# -> (# eta, Paths_aoc2018.getLibDir3 #) } } } } }) -}
-8a49d40cb925b72df5f585fe77fe4fcd
+628fdc428906b00fb27ec28589b4257d
   getLibDir3 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString#
                    Paths_aoc2018.getLibDir4) -}
-29acf8c262d689e8dda9feeccb3bf011
+db16d1fa6486fbfb9dc76eedfa5fb974
   getLibDir4 :: GHC.Prim.Addr#
   {- HasNoCafRefs,
-     Unfolding: ("/home/bhart/projects/advent/.stack-work/install/x86_64-linux/lts-12.20/8.4.4/lib/x86_64-linux-ghc-8.4.4/aoc2018-0.1.0.0-95WowAF3ZTKFWvs7qNui0J-aoc2018-exe"#) -}
+     Unfolding: ("/home/bhart/projects/advent/.stack-work/install/x86_64-linux/lts-12.20/8.4.4/lib/x86_64-linux-ghc-8.4.4/aoc2018-0.1.0.0-GLf9n0d8GLlKAbTXmA65Bh-aoc2018-exe"#) -}
 9928a1a9ba4030b103b4527d9dc8c670
   getLibDir5 ::
     GHC.Prim.State# GHC.Prim.RealWorld
